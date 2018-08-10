@@ -5,11 +5,11 @@ function mengelompokkanAngka(arr) {
 	var newArr = [];
 
 	for (var i = 0; i < arr.length; i++) {
-		if ((arr[i] % 2 === 0 && arr[i] % 3 === 0) || (arr[i] % 2 === 1 && arr[i] % 3 === 0)) {
+		if (arr[i] % 3 === 0) {
 			arrTiga.push(arr[i]);
 		} else if (arr[i] % 2 === 0) {
 			arrGenap.push(arr[i]);
-		} else if (arr[i] % 2 === 1) {
+		} else {
 			arrGanjil.push(arr[i]);
 		}
 	}
