@@ -130,3 +130,26 @@ function groupAnimals(animals) {
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil'])); // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
 // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda', 'kancil'], ['unta'] ]
+
+
+// function groupAnimals(animals) {
+// 	var abjadDepan = '';
+// 	var result = [];
+
+// 	for (var i = 0; i < animals.length; i++) {
+// 		abjadDepan = animals[i][0];
+
+// 		if (result[abjadDepan] === undefined) {
+// 			result[abjadDepan] = [];
+// 		}
+
+// 		result[abjadDepan].push(animals[i]);
+// 	}
+
+// 	return result;
+// }
+
+// console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
+// [ c: [ 'cacing' ],
+//   a: [ 'ayam', 'anoa' ],
+//   k: [ 'kuda', 'kancil' ] ]]
