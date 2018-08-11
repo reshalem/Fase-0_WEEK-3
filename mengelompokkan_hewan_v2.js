@@ -3,7 +3,6 @@ function groupAnimals(animals) {
 	var temp = [];
 	var result = [];
 	var arrAbjad = [];
-	var temp = [];
 
 	for (var i = 0; i < animals.length; i++) {
 		if (arrAbjad.indexOf(animals[i][0]) === -1) {
