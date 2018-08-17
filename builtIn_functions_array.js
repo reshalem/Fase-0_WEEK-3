@@ -3,8 +3,7 @@ var input = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"
 function dataHandling2(array) {
 	array.splice(1, 1, 'Roman Alamsyah Elsharawy');
 	array.splice(2, 1, 'Provinsi Bandar Lampung');
-	array.splice(4, 0, 'Pria', 'SMA Internasional Metro');
-	array.splice(6, 1);
+	array.splice(4, 1, 'Pria', 'SMA Internasional Metro');
 	
 	var originalDate = array[3].split('/');
 	var modifiedDate = array[3].split('/');

@@ -6,18 +6,18 @@ var input = [
 			];
 
 function dataHandling(array) {
-	var bio = ['Nomor ID:  ', 'Nama Lengkap:  ', 'TTL:  ', 'Hobi:  ']; 	
+	var bio = ['Nomor ID:  ', 'Nama Lengkap:  ', 'TTL:  ', 'Hobi:  '];
 	var newSentence = '';
 
 	for (var i = 0; i < array.length; i++) {
-		for (var j = 0; j < array[i].length-1; j++) {
+		for (var j = 0; j < bio.length; j++) {
 			if (j === 2) {
-				input[i][j] = input[i][j] + ' ' + input[i][j+1];
+				array[i][j] = array[i][j] + ' ' + array[i][j+1];
 			} else if (j === 3) {
-				input[i][j] = input[i][j+1];
+				array[i][j] = array[i][j+1];
 			}
 
-			newSentence = newSentence + bio[j] + input[i][j];
+			newSentence = newSentence + bio[j] + array[i][j];
 			console.log(newSentence);
 
 			if (j === 3) {
@@ -26,8 +26,6 @@ function dataHandling(array) {
 
 			newSentence = '';
 		}
-
-		newSentence = '';
 	}
 }
 
